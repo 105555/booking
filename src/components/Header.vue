@@ -1,7 +1,9 @@
 <template>
-  <header class="flex items-center justify-around py-6 flex-nowrap">
+  <header class="relative z-50 flex items-center justify-around py-6 flex-nowrap">
     <div class="flex-1 pl-24">
-        <img src="@/assets/img/logo-aloha.svg" alt="ALOHA" class="h-8 cursor-pointer" /> 
+      <NuxtLink :to="{ name: 'index' }" class="inline-block">
+        <img src="@/assets/img/logo-aloha.svg" alt="ALOHA" class="h-8 cursor-pointer" />
+      </NuxtLink>
     </div>
     <div class="flex items-center space-x-6">
       <Menu as="div" class="relative inline-block text-left">
@@ -40,8 +42,13 @@
       </Menu>
     </div>
     <ul class="flex px-6">
-      <li class="pr-6 text-lg cursor-pointer">註冊</li>
-      <li class="text-lg cursor-pointer">登入</li>
+      <li class="pr-6 text-lg cursor-pointer">
+        <NuxtLink :to="{ name: 'register' }">註冊</NuxtLink>
+      </li>
+
+      <li class="text-lg cursor-pointer">
+        <NuxtLink  :to="{ name: 'login' }">登入</NuxtLink>
+      </li>
     </ul>
     <color-mode class="pr-12" />
   </header>

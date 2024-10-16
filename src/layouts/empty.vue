@@ -1,16 +1,13 @@
 <template>
   <ClientOnly>
     <div :class="`${colorMode.value}`">
-      <Header class="container px-10 mx-auto"/>
-        <slot />
-      <LazyFooter class="container px-10 mx-auto"/> <!--使用時才載入-->
+      <slot />
     </div>
   </ClientOnly>
 </template>
 
 <script setup lang="ts">
 const colorMode = useColorMode();
-
 </script>
 
 <style>

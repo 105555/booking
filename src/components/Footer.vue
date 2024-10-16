@@ -1,5 +1,5 @@
 <template>
-    <footer class="flex items-center justify-around py-6">
+    <footer class="z-50 flex items-center justify-around py-6 realtive">
         <h2>© 2024 ALOHA, Inc. All rights reserved.</h2>
         <ul class="flex justify-between">
             <li class="pr-6 cursor-pointer">FAQs</li>
