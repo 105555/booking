@@ -1,76 +1,58 @@
-# Nuxt 3 Minimal Starter
+# Booking
+![Static Badge](https://img.shields.io/badge/Vue-green) ![Static Badge](https://img.shields.io/badge/tailwind-blue) ![Static Badge](https://img.shields.io/badge/Vite-green) ![Static Badge](https://img.shields.io/badge/Node-v21.6.2-blue)  ![Static Badge](https://img.shields.io/badge/pnpm-9.7.0-orange)
+## 資料夾架構
+ - public # 不需編譯靜態檔
+ - src # 主原始碼
+    - assets # 需編譯靜態檔
+    - components # 元件放置處
+    - layouts # 基礎頁面呈現配置放置處
+    - locales # i18n
+    - plugins # 三方外掛
+    - middleware # 中介
+    - store # pinia
+    - pages # 頁面
+    
+## 指令
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+### pnpm
+- 安裝步驟
+```
+pnpm i 
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+- 啟動本地端
+```
+pnpm run dev 
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+- 打包專案
+```
+pnpm build 
 ```
 
-Locally preview production build:
+## 技術棧
+-	css框架：twailwind
+-	狀態管理：Pinia
+-   多語系: nuxt@i18n
+-	後端服務：laravel
+-	建構工具：Vite
 
-```bash
-# npm
-npm run preview
+## 功能概述
 
-# pnpm
-pnpm run preview
 
-# yarn
-yarn preview
+<!-- ## 部署流程
+- `pnpm build` 生成 **dist 資料夾**
 
-# bun
-bun run preview
-```
+- `git add dist -f` 加入 dist 資料夾
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# booking
+- `git commit -m "Update"` 命名 commit
+
+- `git subtree  push --prefix dist origin gh-pages` 部署 gh-pages branch -->
+
+<!-- ### 專案呈現 (https://105555.github.io/watches-store/) -->
+
+### 注意
+
+<!-- 1. <strong>未經允許請勿發佈於相關社交平台或者部落格等網路相關平台<strong> -->
+
+
