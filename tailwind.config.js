@@ -11,6 +11,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {},
+    screens: {
+      // 'ph': '320px',
+    },
   },
   plugins: [],
 }

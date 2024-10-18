@@ -13,7 +13,7 @@
                 <span class="mdi mdi-account mdi-24px dark:text-black"></span>
                 <input type="text" class="p-2 rounded-md" placeholder="Guests">
             </div>
-            <button class="p-2 bg-[#6C51E2] rounded-md">Search</button>
+            <button class="p-2 bg-[#6C51E2] rounded-md text-white">Search</button>
         </form>
     </div>
 </template>

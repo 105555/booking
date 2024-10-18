@@ -1,11 +1,11 @@
 <template>
-  <header class="relative z-50 flex items-center justify-around py-6 flex-nowrap">
+  <header class="relative z-50 flex flex-wrap items-center justify-around py-6 xl:container">
     <div class="flex-1 pl-24">
       <NuxtLink :to="{ name: 'index' }" class="inline-block">
         <img src="@/assets/img/logo-aloha.svg" alt="ALOHA" class="h-8 cursor-pointer" />
       </NuxtLink>
     </div>
-    <div class="flex items-center space-x-6">
+    <div class="flex items-center space-x-8">
       <Menu as="div" class="relative inline-block text-left">
         <MenuButton class="flex items-center space-x-1">
           <span
@@ -42,15 +42,16 @@
       </Menu>
     </div>
     <ul class="flex px-6">
-      <li class="pr-6 text-lg cursor-pointer">
-        <NuxtLink :to="{ name: 'register' }">註冊</NuxtLink>
-      </li>
-
-      <li class="text-lg cursor-pointer">
+      <li class="pr-6 text-sm cursor-pointer">
         <NuxtLink  :to="{ name: 'login' }">登入</NuxtLink>
       </li>
+      <li class="pr-6 text-sm cursor-pointer">
+        <NuxtLink :to="{ name: 'register' }">我是新朋友</NuxtLink>
+      </li>
+      <li>
+        <color-mode />
+      </li>
     </ul>
-    <color-mode class="pr-12" />
   </header>
 </template>
 <script setup lang="ts">

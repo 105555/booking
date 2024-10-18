@@ -31,6 +31,7 @@ export default defineNuxtConfig({
   // },
   css: [
     '@/assets/css/tailwind.css',  
+    '@/assets/sass/all.scss',  
     '@mdi/font/css/materialdesignicons.css'
   ],
   postcss: {

@@ -1,9 +1,9 @@
 <template>
   <ClientOnly>
-    <div :class="`${colorMode.value}`">
-      <Header class="container px-10 mx-auto"/>
+    <div :class="`${colorMode.value}`" class="md:w-[768px] lg:w-[1024px] xl:w-[1280px]">
+      <Header class="xl:mx-auto xl:px-10 xl:container"/>
         <slot />
-      <LazyFooter class="container px-10 mx-auto"/> <!--使用時才載入-->
+      <LazyFooter class="xl:mx-auto xl:px-10 xl:container"/> <!--使用時才載入-->
     </div>
   </ClientOnly>
 </template>
